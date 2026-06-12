@@ -1,0 +1,133 @@
+BASIC ENCRYPTION & DECRYPTION USING CAESAR CIPHER
+Submitted By
+
+Jayesh Joshi
+
+Internship Program
+
+Cyber Security Internship – DecodeLabs
+
+Project Number
+
+Project 2
+
+Abstract
+
+Data security is one of the fundamental requirements of modern computing systems. Encryption techniques are used to protect sensitive information from unauthorized access. This project implements the Caesar Cipher, one of the earliest and simplest encryption algorithms, to demonstrate the concepts of encryption and decryption. The application converts plaintext into ciphertext using a user-defined shift key and restores the original message through decryption.
+
+1. Introduction
+
+Cryptography is the science of securing information by transforming readable data into an unreadable format. Encryption protects information during storage and transmission, while decryption restores encrypted information to its original form.
+
+The Caesar Cipher is a substitution cipher developed by Julius Caesar. It works by shifting each letter of a message by a fixed number of positions in the alphabet. Although it is not suitable for modern security requirements, it serves as an excellent introduction to cryptographic concepts.
+
+2. Objectives
+
+The objectives of this project are:
+
+To understand the basic principles of cryptography.
+To implement encryption using the Caesar Cipher algorithm.
+To implement decryption using the same shift key.
+To demonstrate reversible data transformation.
+To understand ASCII manipulation and modular arithmetic.
+3. Problem Statement
+
+Develop a Python application that:
+
+Accepts user input as plaintext.
+Encrypts the plaintext using a Caesar Cipher.
+Allows users to specify a shift key.
+Decrypts the ciphertext back into plaintext.
+Displays both encrypted and decrypted outputs.
+4. Methodology
+
+The project follows the Caesar Cipher technique.
+
+Encryption Process
+Accept plaintext from the user.
+Accept a shift key.
+Shift each alphabetic character by the specified number of positions.
+Preserve spaces, numbers, and special symbols.
+Generate ciphertext.
+Decryption Process
+Accept ciphertext.
+Apply reverse shifting using the same key.
+Recover the original plaintext.
+Verify successful decryption.
+5. Algorithm
+Encryption Algorithm
+Input plaintext.
+Input shift value.
+Traverse each character.
+If the character is alphabetic:
+Convert to ASCII.
+Shift by the specified key.
+Apply modulo 26.
+Append transformed character.
+Display ciphertext.
+Decryption Algorithm
+Input ciphertext.
+Traverse each character.
+Reverse the shift.
+Apply modulo 26.
+Recover plaintext.
+Display decrypted message.
+6. Tools and Technologies Used
+Technology	Purpose
+Python 3	Programming Language
+ord()	ASCII Conversion
+chr()	Character Reconstruction
+Modulo Arithmetic	Alphabet Wrapping
+Functions	Encryption & Decryption Logic
+7. Sample Execution
+Input
+Enter Text: Cyber Security
+Enter Shift Key: 3
+Output
+Original Text : Cyber Security
+
+Encrypted Text : Fbehu Vhfxulwb
+
+Decrypted Text : Cyber Security
+
+Encryption and Decryption Successful
+8. Applications
+
+The Caesar Cipher can be used for:
+
+Understanding basic cryptography concepts.
+Educational demonstrations.
+Secure communication learning.
+Cybersecurity training exercises.
+Algorithm development practice.
+9. Learning Outcomes
+
+Through this project, the following concepts were learned:
+
+Cryptography Fundamentals
+Caesar Cipher Algorithm
+Encryption Techniques
+Decryption Techniques
+Modular Arithmetic
+ASCII Character Manipulation
+Python Programming
+Secure Data Handling Concepts
+10. Advantages
+Easy to understand and implement.
+Demonstrates fundamental cryptographic principles.
+Suitable for beginners learning cybersecurity.
+Requires minimal computational resources.
+11. Limitations
+Vulnerable to brute-force attacks.
+Not suitable for real-world secure communications.
+Uses a fixed substitution pattern.
+Easily broken using frequency analysis.
+12. Conclusion
+
+The Caesar Cipher Encryption and Decryption project successfully demonstrates the fundamental concepts of cryptography. The implementation shows how information can be transformed into ciphertext and restored to its original form using a shift key. While the Caesar Cipher is not secure for modern applications, it provides a strong foundation for understanding encryption, decryption, and data protection mechanisms used in cybersecurity.
+
+References
+Python Documentation
+Cryptography Fundamentals
+DecodeLabs Cyber Security Internship Training Material
+Classical Cryptography Concepts
